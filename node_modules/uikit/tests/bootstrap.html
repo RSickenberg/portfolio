@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Test</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="js/test.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+
+        <script type='text/javascript'>
+            $(document).ready(function () {
+                if ($("[rel=tooltip]").length) {
+                    $("[rel=tooltip]").tooltip();
+                }
+            });
+            $(document).ready(function () {
+                if ($("[rel=popover]").length) {
+                    $("[rel=popover]").popover();
+                }
+            });
+        </script>
+
+        <style>
+            @font-face {
+              font-family: 'IcoMoon';
+              src: url('../../../../../../media/jui/fonts/IcoMoon.eot');
+              src: url('../../../../../../media/jui/fonts/IcoMoon.eot?#iefix') format('embedded-opentype'), url('../../../../../../media/jui/fonts/IcoMoon.woff') format('woff'), url('../../../../../../media/jui/fonts/IcoMoon.ttf') format('truetype'), url('../../../../../../media/jui/fonts/IcoMoon.svg#IcoMoon') format('svg');
+              font-weight: normal;
+              font-style: normal;
+            }
+        </style>
+
+    </head>
+    <body>
+
+    <div class="container">
+
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="page-header">
+                    <h1>Bootstrap Test</h1>
+                </div>
+
+
+                <!-- Navbars
+                ================================================== -->
+
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="#">Brand</a>
+                        <div class="nav-collapse">
+                            <ul class="nav">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#">Link</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form class="navbar-search pull-left">
+                                <input type="text" class="search-query" placeholder="Search" data-provide="typeahead">
+                            </form>
+                            <ul class="nav pull-right">
+                                <li><a href="#">Link</a></li>
+                                <li class="divider-vertical"></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar navbar-inverse">
+                    <div class="navbar-inner">
+                        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+                        <a class="brand" href="#">Brand</a>
+                        <div class="nav-collapse">
+                            <ul class="nav">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#">Link</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form class="navbar-search pull-left">
+                                <input type="text" class="search-query" placeholder="Search" data-provide="typeahead">
+                            </form>
+                            <ul class="nav pull-right">
+                                <li><a href="#">Link</a></li>
+                                <li class="divider-vertical"></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">Something else here</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated link</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Buttons
+        ================================================== -->
+
+        <div class="row-fluid">
+            <div class="span11">
+                <div class="span11">
+                    <div class="btn-toolbar">
+                        <div class="btn-group">
+                            <button class="btn">Default</button>
+                            <button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                        <button href="#myModal" role="button" class="btn" data-toggle="modal"><i class="icon-cog"></i> Modal</button>
+                        <button class="btn btn-primary"><i class="icon-joomla icon-white"></i> Primary</button>
+                        <button class="btn btn-info" rel="tooltip" data-toggle="tooltip" title="first tooltip"><i class="icon-flag icon-white"></i> Tooltip</button>
+                        <button class="btn btn-success" rel="popover" data-toggle="popover" data-placement="top" data-content="Top Popover" title data-original-title="POPOVER"><i class="icon-ok icon-white"></i> Popover</button>
+                        <button class="btn btn-warning"><i class="icon-remove icon-white"></i> Warning</button>
+                        <button class="btn btn-danger"><i class="icon-remove icon-white"></i> Danger</button>
+                        <button class="btn btn-inverse"><i class="icon-grid icon-white"></i> Inverse</button>
+                        <button class="btn disabled"><i class="icon-grid icon-white"></i> Disabled</button>
+                    </div>
+                </div>
+                <div class="span11">
+                    <button class="btn btn-large"><i class="icon-grid icon-white"></i> Large</button>
+                    <button class="btn btn-small"><i class="icon-grid icon-white"></i> Small</button>
+                    <button class="btn btn-link">Link Button</button>
+                    <a href="#" class="btn btn-primary">Primary link</a>
+                    <a href="#" class="btn btn-primary disabled">Primary disabled</a>
+                    <a class="btn" href="">Link</a>
+                    <a href="#" class="btn disabled">Link disabled</a>
+                </div>
+            </div>
+            <div clas="span1">
+                <div class="btn-group btn-group-vertical">
+                    <button class="btn"><i class="icon-paragraph-left"></i></button>
+                    <button class="btn"><i class="icon-paragraph-center"></i></button>
+                    <button class="btn"><i class="icon-paragraph-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <br>
+
+
+        <!-- Forms
+        ================================================== -->
+
+        <div class="row-fluid">
+            <div class="span5">
+                <form class="form-search">
+                    <input type="text" class="input-small search-query">
+                    <button type="submit" class="btn">Search</button>
+                    <div class="input-append">
+                        <input type="text" class="input-small search-query">
+                        <button type="submit" class="btn">Search</button>
+                    </div>
+                </form>
+            </div>
+            <div class="span7">
+                <form class="form-horizontal">
+                    <div class="input-append">
+                        <div class="btn-group">
+                            <input class="input-small" id="appendedDropdownButton" type="text">
+                            <button class="btn">Action</button>
+                            <button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>item</li>
+                                <li>item</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <input type="text" class="input-small" placeholder="Email">
+                    <button type="submit" class="btn">Go</button>
+                    <div class="input-append input-prepend">
+                        <button class="btn" type="button"><span class="caret"></span></button>
+                        <input class="span4" id="appendedInputButtons" type="text">
+                        <button class="btn" type="button">Search</button>
+                        <button class="btn dropdown-toggle" tabindex="-1" data-toggle="dropdown">
+                            <span class="caret"></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <!-- Progress
+        ================================================== -->
+
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="progress progress-striped">
+                    <div class="bar" style="width: 20%;"></div>
+                    <div class="bar bar-success" style="width: 20%;"></div>
+                    <div class="bar bar-warning" style="width: 20%;"></div>
+                    <div class="bar bar-danger" style="width: 15%;"></div>
+                    <div class="bar bar-info" style="width: 15%;"></div>
+                </div>
+                <div class="progress">
+                    <div class="bar" style="width: 20%;"></div>
+                    <div class="bar bar-success" style="width: 20%;"></div>
+                    <div class="bar bar-warning" style="width: 20%;"></div>
+                    <div class="bar bar-danger" style="width: 15%;"></div>
+                    <div class="bar bar-info" style="width: 15%;"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Nav Pills - Breadcrumb - Accordion - Text
+        ================================================== -->
+
+        <div class="row-fluid">
+            <!-- Nav Pills -->
+            <div class="span6">
+                <ul class="nav nav-pills">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">More options</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="disabled"><a href="#">Disabled</a></li>
+                </ul>
+                <div class="row-fluid">
+                        <div class="span12">
+                            <div class="span6">
+                                <ul class="nav nav-tabs nav-stacked">
+                                    <li class="active"><a href="#">Home</a></li>
+                                    <li><a href="#">Messages</a></li>
+                                    <li><a href="#">Messages</a></li>
+                                </ul>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li class="active"><a href="#">Home</a></li>
+                                    <li><a href="#">Messages</a></li>
+                                </ul>
+                            </div>
+                        <div class="span6">
+                            <div class="well" style="padding: 8px 0;">
+                                <ul class="nav nav-list">
+                                    <li class="nav-header">List header</li>
+                                    <li class="active"><a href="#">Home</a></li>
+                                    <li><a href="#">Library</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Help</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Nav Pills End -->
+            <div class="span6">
+                <div class="row-fluid">
+                    <!-- Breadcrumb -->
+                    <div class="span12">
+                        <ul class="breadcrumb">
+                            <li><a href="#">Home</a> <span class="divider">/</span></li>
+                            <li><a href="#">Library</a> <span class="divider">/</span></li>
+                            <li class="active">Data</li>
+                        </ul>
+                        <div class="page-header">
+                            <h1>Page header <small>Subtext</small></h1>
+                        </div>
+                    </div>
+                    <!-- /Breadcrumb End -->
+                    <!-- Accordion -->
+                    <div class="span6">
+                        <div class="accordion" id="accordion2">
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Collapsible Group Item #1</a>
+                                </div>
+                                <div id="collapseOne" class="accordion-body collapse in">
+                                    <div class="accordion-inner">Anim pariatur cliche. </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">Collapsible Group Item #2</a>
+                                </div>
+                                <div id="collapseTwo" class="accordion-body collapse">
+                                    <div class="accordion-inner">Anim pariatur cliche...</div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">Collapsible Group Item #3</a>
+                                </div>
+                                <div id="collapseThree" class="accordion-body collapse">
+                                    <div class="accordion-inner">Anim pariatur cliche...</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Accordion End -->
+                    <!-- Text States -->
+                    <div class="span2">
+                        <div class="lead">lead</div>
+                        <div class="muted">muted</div>
+                        <div class="text-warning">warning</div>
+                        <div class="text-error">error</div>
+                        <div class="text-info">info</div>
+                    </div>
+                    <div class="span3">
+<pre>
+&lt;p&gt;Code block...&lt;/p&gt;
+</pre>
+                        <div class="text-success">success</div>
+                        <code>&lt;code element&gt;</code>
+                    </div>
+                    <!-- /Text States End -->
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Pager / Pagination - Tabs
+        ================================================== -->
+
+        <div class="row-fluid">
+            <!-- Pager / Pagination -->
+            <div class="span3">
+                <ul class="pager" style="margin-top:0;">
+                    <li><a href="#">Previous</a></li>
+                    <li class="disabled"><a href="#">Next</a></li>
+                </ul>
+                <div class="pagination pagination-centered">
+                    <ul>
+                        <li><a href="#">&larr;</a></li>
+                        <li class="active"><a href="#">10</a></li>
+                        <li class="disabled"><a href="#">...</a></li>
+                        <li><a href="#">20</a></li>
+                        <li><a href="#">&rarr;</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /Pager / Pagination End -->
+            <!-- Tabs -->
+            <div class="span3">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#A" data-toggle="tab">Tab 1</a></li>
+                    <li><a href="#B" data-toggle="tab">Tab 2</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="tabbable">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="A">
+                            <p>I'm in Section A.</p>
+                        </div>
+                        <div class="tab-pane" id="B">
+                            <p>Howdy, I'm in Section B.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="span2">
+                <div class="tabbable tabs-below">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="A1">
+                            <p>I'm in Section A.</p>
+                        </div>
+                        <div class="tab-pane" id="B1">
+                            <p>Howdy, I'm in Section B.</p>
+                        </div>
+                    </div>
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#A1" data-toggle="tab">Tab 1</a></li>
+                        <li><a href="#B1" data-toggle="tab">Tab 2</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="span2">
+                <div class="tabbable tabs-left">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#lA" data-toggle="tab">Tab 1</a></li>
+                        <li><a href="#lB" data-toggle="tab">Tab 2</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="lA">
+                            <p>I'm in Section A.</p>
+                        </div>
+                        <div class="tab-pane" id="lB">
+                            <p>Howdy, I'm in Section B.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="span2">
+                <div class="tabbable tabs-right">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#2A" data-toggle="tab">Tab 1</a></li>
+                        <li><a href="#2B" data-toggle="tab">Tab 2</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="2A">
+                            <p>I'm in Section A.</p>
+                        </div>
+                        <div class="tab-pane" id="2B">
+                            <p>Howdy, I'm in Section B.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Tabs End -->
+        </div>
+
+
+        <!-- Blockquote - Label - Badge
+        ================================================== -->
+
+        <div class="row-fluid">
+            <div class="span3">
+                <blockquote>
+                    <p>Lorem ipsum dolor sit</p>
+                    <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                </blockquote>
+            </div>
+            <div class="span3">
+                <blockquote class="pull-right">
+                    <p>Lorem ipsum dolor sit</p>
+                    <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+                </blockquote>
+            </div>
+            <div class="span6">
+                <span class="label">Default</span>
+                <span class="label label-success">Success</span>
+                <span class="label label-warning">Warning</span>
+                <span class="label label-important">Important</span>
+                <span class="label label-info">Info</span>
+                <span class="label label-inverse">Inverse</span>
+                <br>
+                <span class="badge">Default</span>
+                <span class="badge badge-success">Success</span>
+                <span class="badge badge-warning">Warning</span>
+                <span class="badge badge-important">Important</span>
+                <span class="badge badge-info">Info</span>
+                <span class="badge badge-inverse">Inverse</span>
+            </div>
+        </div>
+
+
+        <!-- Alert
+        ================================================== -->
+
+        <div class="row-fluid">
+            <div class="span6">
+                <div class="alert">
+                    <a class="close" data-dismiss="alert">&times;</a>
+                    <strong>Alter</strong> Best check yo self, you're not looking too good.
+                </div>
+                <div class="alert alert-error">
+                    <a class="close" data-dismiss="alert">&times;</a>
+                    <strong>Error</strong> Change a few things up and try submitting again.
+                </div>
+            </div>
+            <div class="span6">
+                <div class="alert alert-success">
+                    <a class="close" data-dismiss="alert">&times;</a>
+                    <strong>Success</strong> You successfully read this important alert message.
+                </div>
+                <div class="alert alert-info">
+                    <a class="close" data-dismiss="alert">&times;</a>
+                    <strong>Information</strong> This alert needs your attention...
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Hero Unit - Tables
+        ================================================== -->
+
+        <div class="row-fluid">
+            <div class="span6">
+                <div class="hero-unit">
+                    <h3>Hero Unit</h3>
+                </div>
+            </div>
+            <div class="span3">
+                <table class="table table-bordered table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Max</td>
+                            <td>Otto</td>
+                        </tr>
+                        <tr>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                        </tr>
+                        <tr>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                        </tr>
+                        <tr>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="span3">
+                <table class="table table-bordered table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="error">
+                            <td>Max</td>
+                            <td>Otto</td>
+                        </tr>
+                        <tr class="warning">
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                        </tr>
+                        <tr class="info">
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                        </tr>
+                        <tr class="success">
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <!-- Forms
+        ================================================== -->
+
+        <div class="row-fluid">
+            <div class="span4">
+                <div class="control-group">
+                    <label class="control-label" for="input01">Text input</label>
+                    <div class="controls">
+                        <input type="text" class="input-xlarge" id="input01">
+                        <p class="help-block">Helpblock...</p>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="input-prepend input-append">
+                        <span class="add-on">$</span>
+                        <input class="span2" id="appendedPrependedInput" type="text">
+                        <span class="add-on">.00</span>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <label class="checkbox">
+                            <input type="checkbox" id="optionsCheckbox" value="option1">Option one is this
+                        </label>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <select id="select01">
+                            <option>something</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <select multiple="multiple" id="multiSelect">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="control-group">
+                    <label class="control-label" for="textarea">Textarea</label>
+                    <div class="controls">
+                        <textarea class="input-xlarge" id="textarea"></textarea>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label">Uneditable input</label>
+                    <div class="controls">
+                        <span class="input-xlarge uneditable-input">Some value here</span>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="disabledInput">Disabled input</label>
+                    <div class="controls">
+                        <input class="input-xlarge disabled" id="disabledInput" type="text" placeholder="Disabled input here…" disabled>
+                    </div>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="control-group warning">
+                    <label class="control-label" for="inputWarning">Input with warning</label>
+                    <div class="controls">
+                        <input type="text" id="inputWarning">
+                        <span class="help-inline">wrong</span>
+                    </div>
+                </div>
+                <div class="control-group error">
+                    <label class="control-label" for="inputError">Input with error</label>
+                    <div class="controls">
+                        <input type="text" id="inputError">
+                        <span class="help-inline">error</span>
+                    </div>
+                </div>
+                <div class="control-group success">
+                    <label class="control-label" for="inputSuccess">success</label>
+                    <div class="controls">
+                        <input type="text" id="inputSuccess">
+                        <span class="help-inline">Woohoo!</span>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                    <button type="reset" class="btn">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Well
+        ================================================== -->
+
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="well well-small">Well small</div>
+            </div>
+        </div>
+
+
+        <!-- Image - Thumbnail - Carousel
+        ================================================== -->
+
+        <div class="row-fluid">
+            <div class="span3">
+                <img src="http://lorempixel.com/200/200" class="img-polaroid" alt="image">
+            </div>
+            <div class="span3">
+                <div class="thumbnail">
+                    <img src="http://lorempixel.com/1000/480" alt="">
+                    <div class="caption">
+                        <h5>Thumbnail label</h5>
+                        <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="span6">
+                <div id="myCarousel" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="active item"><img src="http://lorempixel.com/600/270" alt=""></div>
+                        <div class="item"><img src="http://lorempixel.com/600/270" alt=""></div>
+                        <div class="item"><img src="http://lorempixel.com/600/270" alt=""></div>
+                    </div>
+                    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                </div>
+            </div>
+        </div>
+
+    <!-- /Container End -->
+    </div>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="myModalLabel">Modal header</h3>
+            </div>
+            <div class="modal-body">
+                <p>One fine body…</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                <button class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        <!-- /Modal End -->
+
+    </body>
+</html>
