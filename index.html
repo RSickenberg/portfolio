@@ -11,7 +11,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="stylesheet" href="node_modules/uikit/dist/css/uikit.min.css">
 
-    <script async src="node_modules/uikit/dist/js/uikit.min.js"></script>
+    <script src="node_modules/uikit/dist/js/uikit.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script async src="node_modules/uikit/dist/js/uikit-icons.min.js"></script>
     <script async src="node_modules/simple-parallax-js/dist/simpleParallax.min.js"></script>
 
@@ -28,48 +29,76 @@
         gtag('config', 'UA-83619616-1');
     </script>
 </head>
-<body>
-    <div class="uk-navbar-container uk-dark" uk-navbar>
-        <div class="uk-container uk-container-expand">
-            <nav class="uk-navbar">
-                <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav">
-                        <li><a href="#" class="uk-active">Home</a></li>
-                        <li><a href="#" class="">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </div>
+<body">
+<!--    <script defer>-->
+<!--        let phpskill = 75;-->
+<!--        let sqlskill = 50;-->
+<!--        let swiftskill = 40;-->
+<!--        let csharpskill = 30;-->
+<!--        let pythonskill = 20;-->
+<!--        let javaskill = 10;-->
+<!--    </script>-->
+<!--    <script>-->
+<!--        function isOnScreen(elem) {-->
+<!--            // if the element doesn't exist, abort-->
+<!--            if(elem.length === 0) {-->
+<!--                return;-->
+<!--            }-->
+<!--            var $window = jQuery(window);-->
+<!--            var viewport_top = $window.scrollTop();-->
+<!--            var viewport_height = $window.height();-->
+<!--            var viewport_bottom = viewport_top + viewport_height;-->
+<!--            var $elem = jQuery(elem);-->
+<!--            var top = $elem.offset().top;-->
+<!--            var height = $elem.height();-->
+<!--            var bottom = top + height;-->
+
+<!--            return (top >= viewport_top && top < viewport_bottom) ||-->
+<!--                (bottom > viewport_top && bottom <= viewport_bottom) ||-->
+<!--                (height > viewport_height && top <= viewport_top && bottom >= viewport_bottom)-->
+<!--        }-->
+<!--    </script>-->
+<!--    <div class="uk-navbar-container uk-navbar-transparent">-->
+<!--        <div class="uk-container uk-container-expand">-->
+<!--            <nav class="uk-navbar">-->
+<!--                <div class="uk-navbar-right">-->
+<!--                    <ul class="uk-navbar-nav">-->
+<!--                        <li><a href="#" class="uk-button uk-button-primary uk-text-bold">Contact</a></li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </nav>-->
+<!--        </div>-->
+<!--    </div>-->
     <div class="uk-container uk-section-default uk-margin-large-top uk-margin-large-bottom">
-        <div class="uk-margin-large uk-grid uk-grid-stack">
+        <div class="uk-margin-large-top uk-grid uk-grid-stack">
             <div class="uk-first-column uk-width-1-1@m">
-                <h2 class="uk-heading-small uk-width-medium uk-scrollspy-inview uk-animation-slide-bottom-medium">
+                <h2 class="uk-heading-small uk-animation-slide-bottom-medium">
                     Romain Sickenberg
                 </h2>
-                <div class="uk-divider-small uk-scrollspy-inview uk-animation-slide-bottom-medium" uk-scrollspy-class></div>
+                <div class="uk-divider-small uk-scrollspy-inview uk-animation-slide-bottom-small"></div>
             </div>
         </div>
-        <div class="uk-grid-margin uk-grid">
-            <div class="uk-width-expand@m uk-width-1-3@s uk-first-column">
+        <div class="uk-grid-margin" uk-grid>
+            <div class="uk-width-expand@m uk-width-1-1@s uk-first-column">
                 <div class="uk-panel uk-margin uk-scrollspy-inview uk-animation-slide-bottom-medium">
-                    <img class="uk-box-shadow-medium uk-box-shadow-hover-large" src="static/img/profil.jpg" alt="">
-                    <div class="uk-margin-top uk-text-muted">Apprentice Web Developer</div>
+<!--                    <img class="uk-border-rounded uk-box-shadow-medium uk-box-shadow-hover-large" data-src="static/img/profil.jpg" alt="" uk-img>-->
+                    <div class="uk-height-large uk-width-large uk-border-rounded uk-background-cover uk-box-shadow-medium uk-box-shadow-hover-large" uk-parallax="blur: 10" style="background-image: url('static/img/profil.jpg');"></div>
+                    <div class="uk-margin-top uk-text-muted uk-animation-slide-bottom-small">Apprentice Web Developer</div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="uk-section-default uk-margin-large-top uk-margin-large-bottom">
+    <div class="uk-section-default uk-margin-large-top uk-margin-large-bottom" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-slide-top-medium; delay: 200;">
         <div class="uk-container uk-margin-large-top">
-            <div class="uk-margin-large uk-grid-margin uk-grid uk-grid-stack">
+            <div class="uk-margin-large-top uk-grid-margin uk-grid uk-grid-stack">
                 <div class="uk-width-1-1@m uk-first-column">
-                    <h2 class="uk-heading-small uk-width-medium uk-scrollspy-inview uk-animation-slide-bottom-medium">Work</h2>
-                    <div class="uk-divider-small uk-scrollspy-inview uk-animation-slide-bottom-medium"></div>
+                    <h2 class="uk-heading-small uk-width-medium" uk-scrollspy-class>Work</h2>
+                    <div class="uk-divider-small uk-animation-slide-top-small"></div>
                 </div>
             </div>
-            <div class="uk-margin-large uk-grid uk-grid-divider uk-scrollspy-inview uk-animation-slide-bottom-medium">
-                <div class="uk-width-1-2@m uk-first-column">
+            <div class="uk-margin-large-bottom uk-grid uk-grid-divider" uk-scrollspy-class uk-scrollspy="target: .uk-progress; cls: uk-animation-slide-top-medium; delay: 200">
+                <div class="uk-width-1-2@m uk-first-column uk-grid-margin">
                     <div>
                         <div class="uk-child-width-auto uk-grid uk-grid-small">
                             <div class="uk-first-column">
@@ -81,54 +110,61 @@
                             </div>
                         </div>
                     </div>
-                    <ul class="uk-list uk-list-divider uk-list-large uk-margin-large uk-text-large">
+                    <ul class="uk-list uk-list-divider uk-list-large uk-text-large">
                         <li>
-                            <div class="uk-child-width-expand uk-grid-small uk-grid" uk-grid>
+                            <div class="uk-child-width-expand uk-grid-small" uk-grid>
                                 <div class="uk-panel">
                                     <span class="uk-text-background">PHP</span>
+                                    <progress id="php" class="uk-progress" value="75" max="100"></progress>
                                 </div>
                             </div>
                         </li>
                         <li>
-                            <div class="uk-child-width-expand uk-grid-small uk-grid" uk-grid>
-                                <div class="uk-panel">
-                                    <span class="uk-text-background">Swift</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="uk-child-width-expand uk-grid-small uk-grid" uk-grid>
-                                <div class="uk-panel">
-                                    <span class="uk-text-background">Java</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="uk-child-width-expand uk-grid-small uk-grid" uk-grid>
-                                <div class="uk-panel">
-                                    <span class="uk-text-background">Python</span>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="uk-child-width-expand uk-grid-small uk-grid" uk-grid>
+                            <div class="uk-child-width-expand uk-grid-small" uk-grid>
                                 <div class="uk-panel">
                                     <span class="uk-text-background">SQL</span>
+                                    <progress id="sql" class="uk-progress" value="50" max="100"></progress>
                                 </div>
                             </div>
                         </li>
                         <li>
-                            <div class="uk-child-width-expand uk-grid-small uk-grid" uk-grid>
+                            <div class="uk-child-width-expand uk-grid-small" uk-grid>
+                                <div class="uk-panel">
+                                    <span class="uk-text-background">Swift</span>
+                                    <progress id="swift" class="uk-progress uk-animation-slide-top-medium" value="40" max="100"></progress>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-child-width-expand uk-grid-small" uk-grid>
                                 <div class="uk-panel">
                                     <span class="uk-text-background">C#</span>
+                                    <progress id="csharp" class="uk-progress" value="35" max="100"></progress>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-child-width-expand uk-grid-small" uk-grid>
+                                <div class="uk-panel">
+                                    <span class="uk-text-background">Python</span>
+                                    <span class="uk-text-muted uk-margin-remove">+ Django</span>
+                                    <progress id="python" class="uk-progress" value="10" max="100"></progress>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-child-width-expand uk-grid-small" uk-grid>
+                                <div class="uk-panel">
+                                    <span class="uk-text-background">Java</span>
+                                    <progress id="java" class="uk-progress" value="10" max="100"></progress>
                                 </div>
                             </div>
                         </li>
                     </ul>
                 </div>
-                <div class="uk-width-1-2@m">
+                <div class="uk-width-1-2@m uk-grid-margin">
                     <div>
-                        <div class="uk-child-width-auto uk-grid uk-grid-small" uk-grid>
+                        <div class="uk-child-width-auto uk-grid-small" uk-grid>
                             <div class="uk-first-column">
                                 <h2 class="uk-heading-xlarge uk-text-background">2</h2>
                             </div>
@@ -138,9 +174,9 @@
                             </div>
                         </div>
                     </div>
-                    <ul class="uk-list uk-list-divider uk-list-large uk-margin-large uk-text-large">
+                    <ul class="uk-list uk-list-divider uk-list-large uk-text-large">
                         <li>
-                            <div class="uk-child-width-expand uk-grid-small uk-grid">
+                            <div class="uk-child-width-expand uk-grid-small" uk-grid>
                                 <div class="uk-panel">
                                     <span class="uk-display-block uk-text-muted">#19 in References</span>
                                     <span class="uk-text-background">Wiki for Fortnite</span>
@@ -149,7 +185,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="uk-child-width-expand uk-grid-small uk-grid">
+                            <div class="uk-child-width-expand uk-grid-small" uk-grid>
                                 <div class="uk-panel">
                                     <span class="uk-display-block uk-text-muted">InDev</span>
                                     <span class="uk-text-background">TeslaCompanion</span>
@@ -161,5 +197,66 @@
             </div>
         </div>
     </div>
+    <hr class="uk-margin-large">
+    <div class="uk-section-primary uk-section uk-section-large" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-slide-bottom-medium; delay: 300">
+        <div class="uk-container">
+            <div class="uk-grid-margin" uk-grid>
+                <div class="uk-grid-item-match uk-flex-middle uk-width-1-1@m">
+                    <div class="uk-panel uk-width-1-1">
+                        <h3 class="uk-heading-medium uk-text-center uk-animation-slide-top-medium" uk-scrollspy-class>
+                            Contact Me
+                        </h3>
+                        <div class="uk-width-1-1 uk-margin-large-top" uk-scrollspy-class>
+                            <div class="uk-child-width-auto uk-grid-small uk-flex-around uk-flex-center" uk-grid>
+                                <div>
+                                    <a class="uk-icon uk-icon-button" href="#" uk-icon="icon: github"></a>
+                                </div>
+                                <div>
+                                    <a class="uk-icon uk-icon-button" href="#" uk-icon="icon: linkedin"></a>
+                                </div>
+                                <div>
+                                    <a class="uk-icon uk-icon-button" href="#" uk-icon="icon: twitter"></a>
+                                </div>
+                                <div>
+                                    <a class="uk-icon uk-icon-button" href="#" uk-icon="icon: mail"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--    <script>-->
+<!--        // UIkit.util.ready(function () {-->
+<!--        //     $('#php').on('display.uk.check', function() {-->
+<!--        //         var animate = setInterval(function() {-->
+<!--        //             self.value += 10;-->
+<!--        //-->
+<!--        //             if (self.value >= phpskill) {-->
+<!--        //                 clearInterval(animate);-->
+<!--        //             }-->
+<!--        //         }, 1000);-->
+<!--        //     });-->
+<!--        // });-->
+
+<!--        $(document).ready(function() {-->
+<!--            var phpbar = document.getElementById('php');-->
+
+<!--            UIkit.util.ready(function () {-->
+<!--                if (isOnScreen(phpbar)) {-->
+<!--                    if (phpbar.value !== phpskill) {-->
+<!--                        var animate = setInterval(function () {-->
+<!--                            phpbar.value += 5;-->
+
+<!--                            if (phpbar.value >= phpskill) {-->
+<!--                                clearInterval(animate);-->
+<!--                            }-->
+<!--                        }, 400);-->
+<!--                    }-->
+<!--                }-->
+<!--            })-->
+<!--        })-->
+<!--    </script>-->
 </body>
 </html>
