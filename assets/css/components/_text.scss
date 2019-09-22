@@ -1,0 +1,4 @@
+.uk-text-background-highlight {
+  @extend .uk-text-background;
+  background-image: $text-background-color-highlight !important;
+}

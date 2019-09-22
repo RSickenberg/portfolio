@@ -1,6 +1,8 @@
-@import "~uikit/src/scss/components/progress";
-
 .uk-progress {
-  border-radius: 500px;
-  overflow: hidden;
+  background-color: #ffffdd !important;
+  -webkit-appearance: progress-bar;
+}
+
+.uk-progress::-webkit-progress-value {
+  background-image: $progress-bar-background;
 }

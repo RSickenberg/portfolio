@@ -6,7 +6,11 @@
 // REBUILD
 
 @import "settings/variables";
-//@import "components/progress";
+@import "settings/custom_variables";
+
+@import "components/progress";
+@import "components/button";
+@import "components/text";
 
 
 @import "~uikit/src/scss/variables";
