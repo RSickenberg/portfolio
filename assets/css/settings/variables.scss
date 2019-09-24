@@ -792,8 +792,8 @@ $position-large-margin: $global-gutter !default;
 $position-large-margin-l: 50px !default;
 $progress-height: 15px !default;
 $progress-margin-vertical: $global-margin !default;
-$progress-background: $global-muted-background !default;
-//$progress-bar-background: $global-primary-background !default;
+$progress-background: $global-inverse-color;
+//$progress-bar-background: $global-primary-background !default; overrided in custom_variables
 $progress-border-radius: 500px;
 $search-color: $global-color !default;
 $search-placeholder-color: $global-muted-color !default;
