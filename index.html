@@ -56,7 +56,7 @@
                     <div class="uk-divider-small uk-animation-slide-top-small"></div>
                 </div>
             </div>
-            <div class="uk-margin-large-bottom uk-grid uk-grid-divider" uk-scrollspy-class uk-scrollspy="target: .uk-progress; cls: uk-animation-slide-top-medium; delay: 200">
+            <div class="uk-margin-large-bottom uk-grid uk-grid-divider" uk-scrollspy-class>
                 <div class="uk-width-1-2@m uk-first-column uk-grid-margin">
                     <div>
                         <div class="uk-child-width-auto uk-grid uk-grid-small">
@@ -74,7 +74,6 @@
                             <div class="uk-child-width-expand uk-grid-small" uk-grid>
                                 <div class="uk-panel">
                                     <span class="uk-text-background">PHP</span>
-                                    <progress class="uk-progress" value="75" max="100"></progress>
                                 </div>
                             </div>
                         </li>
@@ -82,7 +81,6 @@
                             <div class="uk-child-width-expand uk-grid-small" uk-grid>
                                 <div class="uk-panel">
                                     <span class="uk-text-background">SQL</span>
-                                    <progress class="uk-progress" value="50" max="100"></progress>
                                 </div>
                             </div>
                         </li>
@@ -90,7 +88,6 @@
                             <div class="uk-child-width-expand uk-grid-small" uk-grid>
                                 <div class="uk-panel">
                                     <span class="uk-text-background">Swift</span>
-                                    <progress class="uk-progress uk-animation-slide-top-medium" value="40" max="100"></progress>
                                 </div>
                             </div>
                         </li>
@@ -98,7 +95,7 @@
                             <div class="uk-child-width-expand uk-grid-small" uk-grid>
                                 <div class="uk-panel">
                                     <span class="uk-text-background">C#</span>
-                                    <progress class="uk-progress" value="35" max="100"></progress>
+<!--                                    <progress class="uk-progress" value="35" max="100"></progress>-->
                                 </div>
                             </div>
                         </li>
@@ -107,7 +104,6 @@
                                 <div class="uk-panel">
                                     <span class="uk-text-background">Python</span>
                                     <span class="uk-text-muted uk-margin-remove">+ Django</span>
-                                    <progress class="uk-progress" value="15" max="100"></progress>
                                 </div>
                             </div>
                         </li>
@@ -115,7 +111,6 @@
                             <div class="uk-child-width-expand uk-grid-small" uk-grid>
                                 <div class="uk-panel">
                                     <span class="uk-text-background">Java</span>
-                                    <progress class="uk-progress" value="10" max="100"></progress>
                                 </div>
                             </div>
                         </li>
@@ -155,13 +150,13 @@
                 </div>
             </div>
         </div>
-        <div class="uk-margin-large"></div>
-        <div class="uk-container uk-margin-large uk-margin-small-bottom">
-            <div class="uk-width-1-8@m">
-                <h2 class="uk-heading-small uk-width-medium" uk-scrollspy-class>Highlights</h2>
-                <div class="uk-divider-small uk-animation-slide-top-small"></div>
-            </div>
-        </div>
+        <hr class="uk-margin-large">
+<!--        <div class="uk-container uk-margin-large uk-margin-medium-bottom">-->
+<!--            <div class="uk-width-1-8@m">-->
+<!--                <h2 class="uk-heading-small uk-width-medium" uk-scrollspy-class>Highlights</h2>-->
+<!--                <div class="uk-divider-small uk-animation-slide-top-small"></div>-->
+<!--            </div>-->
+<!--        </div>-->
         <div class="uk-container-expand">
             <div class="uk-section uk-light uk-overlay-primary uk-background-fixed" uk-parallax="bgy: -100" style="background-image: url('static/img/teslacompanion/composer_black_bg.jpg');">
                 <div class="uk-container" uk-scrollspy="target: [uk-scrollspy-class]; cls: uk-animation-slide-top-large; delay: 400">
@@ -169,22 +164,24 @@
                     <div class="uk-grid uk-text-center uk-grid-match uk-child-width-1-3@m uk-grid-divider uk-margin-medium-top" uk-scrollspy-class style="color: #ffffff">
                         <div class="uk-first-column">
                             <div class="uk-card uk-card-body">
+                                <h4 class="uk-card-title">Purpose</h4>
                                 <p>TeslaCompanion brings the Tesla experience to a new level on the Apple Watch.</p>
                             </div>
                         </div>
                         <div>
                             <div class="uk-card uk-card-body">
-                                <h3 class="uk-card-title"></h3>
-                                <p>Build from strong Swift technology</p>
+                                <h4 class="uk-card-title">Technology</h4>
+                                <p>Build from scratch with strong Swift, supporting iOS 10 or higher and watchOS 2 or higher</p>
                             </div>
                         </div>
                         <div>
                             <div class="uk-card uk-card-body uk-card-body">
-                                <h3 class="uk-card-title"></h3>
-                                <p>Agile development and constant enhancements from the community</p>
+                                <h4 class="uk-card-title">Community</h4>
+                                <p>Big community and ~80 beta testers with EAP and stable releases phases.</p>
                             </div>
                         </div>
                     </div>
+                    <a href="https://testflight.apple.com/join/L7BudGZn" class="uk-button uk-button-default uk-align-center uk-text-center uk-margin-medium-top uk-width-1-4">Join the Beta</a>
                 </div>
             </div>
         </div>
@@ -195,22 +192,26 @@
                     <div class="uk-grid uk-text-center uk-grid-match uk-child-width-1-3@m uk-grid-divider uk-margin-medium-top" uk-scrollspy-class style="color: #FFFFFF">
                         <div class="uk-first-column">
                             <div class="uk-card uk-card-body">
+                                <h4 class="uk-card-title">Design</h4>
                                 <p>Nice design to have data from Fortnite in-game elements.</p>
                             </div>
                         </div>
                         <div>
                             <div class="uk-card uk-card-body">
-                                <h3 class="uk-card-title"></h3>
+                                <h4 class="uk-card-title">Story</h4>
                                 <p>First swift project made.</p>
                             </div>
                         </div>
                         <div>
                             <div class="uk-card uk-card-body">
-                                <h3 class="uk-card-title"></h3>
+                                <h4 class="uk-card-title">Success</h4>
                                 <p>Top 19# in reference category on the AppStore.</p>
                             </div>
                         </div>
                     </div>
+                    <a class="uk-align-center uk-text-center uk-margin-medium-top" href="https://apps.apple.com/ch/app/wiki-for-fortnite/id1393982273?l=fr">
+                        <img data-src="static/img/app-store-badge.png" class="uk-background-image@m" width="230" height="120" alt="Download on the AppStore" uk-img>
+                    </a>
                 </div>
             </div>
         </div>
